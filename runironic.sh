@@ -28,6 +28,7 @@ crudini --set /etc/ironic/ironic.conf DEFAULT default_deploy_interface direct
 crudini --set /etc/ironic/ironic.conf DEFAULT enabled_inspect_interfaces inspector,idrac
 crudini --set /etc/ironic/ironic.conf DEFAULT default_inspect_interface inspector
 crudini --set /etc/ironic/ironic.conf DEFAULT rpc_transport json-rpc
+crudini --set /etc/ironic/ironic.conf DEFAULT api_workers 12
 crudini --set /etc/ironic/ironic.conf dhcp dhcp_provider none
 crudini --set /etc/ironic/ironic.conf conductor automated_clean false
 crudini --set /etc/ironic/ironic.conf conductor api_url http://${IP}:6385
